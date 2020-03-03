@@ -114,7 +114,7 @@ Page({
         console.log('已添加至订单')
         wx.showToast({
           duration: 4000,
-          title: '新订单添加成功'
+          title: '提交成功！'
         })
 
         this.setData({
