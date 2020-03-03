@@ -3,3 +3,9 @@
 .page-section{
   margin-bottom: 20rpx;
 }
+
+.file-button{
+  text-align: right;
+  min-width: 20rpx;
+  width:20rpx;
+}

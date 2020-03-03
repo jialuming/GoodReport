@@ -6,7 +6,7 @@
     <view class="weui-cells__title">姓名</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input" auto-focus placeholder="姓名" value="{{userName}}" bindinput="onInputUserName" />
+        <input class="weui-input" auto-focus placeholder="姓名" value="{{userName}}" bindblur="onInputUserName" />
       </view>
     </view>
   </view>
@@ -15,31 +15,48 @@
     <view class="weui-cells__title">身份证</view>
     <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
-        <input class="weui-input" type="idcard" value="{{idCard}}" bindinput="onInputIDCard" />
+        <input class="weui-input" type="idcard" placeholder="身份证" value="{{idCard}}" bindblur="onInputIDCard" />
       </view>
     </view>
   </view>
-  <view class=" page-section ">
-    <view class="weui-cells__title ">电话/手机</view>
-    <view class="weui-cells weui-cells_after-title ">
-      <view class="weui-cell weui-cell_input ">
-        <input class="weui-input " maxlength="13 " type="number" value="{{phoneNumber}} " bindinput="onInputPhoneNumber" />
+  <view class=" page-section">
+    <view class="weui-cells__title">电话/手机</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" maxlength="13" placeholder="电话/手机" type="number" value="{{phoneNumber}}" bindblur="onInputPhoneNumber" />
       </view>
     </view>
   </view>
-  <view class="page-section ">
-    <view class="weui-cells__title ">去向</view>
-    <view class="weui-cells weui-cells_after-title ">
-      <view class="weui-cell weui-cell_input ">
-        <input class="weui-input " placeholder="省市" value="{{goToWhere}} " bindinput="onInputGoToWhere" />
+  <view class="page-section">
+    <view class="weui-cells__title">去向</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder="省市" value="{{goToWhere}}" bindblur="onInputGoToWhere" />
       </view>
     </view>
   </view>
-  <view class="page-section ">
-    <view class="weui-cells__title ">目的地</view>
-    <view class="weui-cells weui-cells_after-title ">
-      <view class="weui-cell weui-cell_input ">
-        <input class="weui-input " placeholder="详细地址/公司" value="{{address}} " bindinput="onInputAddress" />
+  <view class="page-section">
+    <view class="weui-cells__title">目的地</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder="详细地址/公司" value="{{address}}" bindblur="onInputAddress" />
+      </view>
+    </view>
+  </view>
+   <view class="page-section">
+    <view class="weui-cells__title">体温</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" placeholder="体温" value="{{temperature}}" bindblur="onInputTemperature" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="weui-cells__title">附件</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input" style="padding: 0px  0px 0px 15px;">
+        <input class="weui-input" placeholder="请选择" value="{{fileName}}" disabled="true"/>
+        <button type="default" class="file-button" bindtap="chooseFile" style="width:70px;height:40px;margin:5px 5px 5px 0px;font-size:16px">选择</button>
       </view>
     </view>
   </view>
