@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="page-body">
+
+  <!-- 用户 openid -->
+  <view class="page-section">
+    <view class="weui-cells__title">姓名</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" auto-focus placeholder="姓名" value="{{userName}}" bindinput="onInputUserName" />
+      </view>
+    </view>
+  </view>
+
+  <view class="page-section">
+    <view class="weui-cells__title">身份证</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <input class="weui-input" type="idcard" value="{{idCard}}" bindinput="onInputIDCard" />
+      </view>
+    </view>
+  </view>
+  <view class=" page-section ">
+    <view class="weui-cells__title ">电话/手机</view>
+    <view class="weui-cells weui-cells_after-title ">
+      <view class="weui-cell weui-cell_input ">
+        <input class="weui-input " maxlength="13 " type="number" value="{{phoneNumber}} " bindinput="onInputPhoneNumber" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section ">
+    <view class="weui-cells__title ">去向</view>
+    <view class="weui-cells weui-cells_after-title ">
+      <view class="weui-cell weui-cell_input ">
+        <input class="weui-input " placeholder="省市" value="{{goToWhere}} " bindinput="onInputGoToWhere" />
+      </view>
+    </view>
+  </view>
+  <view class="page-section ">
+    <view class="weui-cells__title ">目的地</view>
+    <view class="weui-cells weui-cells_after-title ">
+      <view class="weui-cell weui-cell_input ">
+        <input class="weui-input " placeholder="详细地址/公司" value="{{address}} " bindinput="onInputAddress" />
+      </view>
+    </view>
+  </view>
+  <button type="primary" bindtap="submitData" disabled="{{btnDisabled}}">提 交</button>
+</view>
